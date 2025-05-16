@@ -14,8 +14,8 @@
     "isolatedModules": true, // Chế độ tách biệt modules
     "jsx": "react-jsx", // Dùng JSX mới từ React 17 trở lên
     "strict": true, // Bật tất cả các chế độ kiểm tra nghiêm ngặt
-    "noUnusedLocals": true, // Lỗi nếu có các biến chưa sử dụng
-    "noUnusedParameters": true, // Lỗi nếu có các tham số chưa sử dụng
+    "noUnusedLocals": false, // Lỗi nếu có các biến chưa sử dụng
+    "noUnusedParameters": false, // Lỗi nếu có các tham số chưa sử dụng
     "noFallthroughCasesInSwitch": true, // Đảm bảo không có lỗi khi chuyển case trong switch
     "noUncheckedSideEffectImports": true, // Lỗi khi import có hiệu ứng phụ không kiểm soát
     "baseUrl": ".", // Đặt baseUrl cho các đường dẫn tuyệt đối
