@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Chọn ngôn ngữ ECMAScript mà bạn muốn biên dịch xuống
+    "useDefineForClassFields": true, // Cho phép khai báo fields trong class theo chuẩn mới
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext", // Sử dụng ESNext để tận dụng module import/export của ES
+    "skipLibCheck": true, // Bỏ qua kiểm tra các thư viện để tránh lỗi không cần thiết
+    "moduleResolution": "node", // Chọn kiểu moduleResolution theo Node.js
+    // "allowImportingTsExtensions": true, // Cho phép nhập khẩu các tệp TypeScript (.ts, .tsx)
+    "isolatedModules": true, // Chế độ tách biệt modules
+    "jsx": "react-jsx", // Dùng JSX mới từ React 17 trở lên
+    "strict": true, // Bật tất cả các chế độ kiểm tra nghiêm ngặt
+    "noUnusedLocals": true, // Lỗi nếu có các biến chưa sử dụng
+    "noUnusedParameters": true, // Lỗi nếu có các tham số chưa sử dụng
+    "noFallthroughCasesInSwitch": true, // Đảm bảo không có lỗi khi chuyển case trong switch
+    "noUncheckedSideEffectImports": true, // Lỗi khi import có hiệu ứng phụ không kiểm soát
+    "baseUrl": ".", // Đặt baseUrl cho các đường dẫn tuyệt đối
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ] // Cấu hình các alias cho đường dẫn tuyệt đối
+    },
+    "allowSyntheticDefaultImports": true, // Hỗ trợ import mặc định cho các module không có export mặc định
+    "esModuleInterop": true, // Cho phép module interop giữa ESModule và CommonJS
+    "typeRoots": [
+      "node_modules/@types" // Xác định thư mục chứa các loại (types) mà bạn cần
+    ]
+  },
+  "include": [
+    "src" // Bao gồm thư mục src trong quá trình biên dịch
+  ]
+}
